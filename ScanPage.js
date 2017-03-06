@@ -3,7 +3,7 @@ import {AppRegistry,StyleSheet,Text,View,Image, TextInput} from 'react-native';
 import Router from './Router';
 import { createRouter, NavigationProvider, StackNavigation } from '@exponent/ex-navigation';
 import Button from 'react-native-button';
-import Camera from 'react-native-camera';
+// import Camera from 'react-native-camera';
 
 export default class ScanPage extends Component {
 
@@ -11,15 +11,15 @@ export default class ScanPage extends Component {
     title: 'scan',
   }
 
-  takePicture() {
-    this.camera.capture()
-      .then((data) => console.log(data))
-      .catch(err => console.error(err));
-    }
+  // takePicture() {
+  //   this.camera.capture()
+  //     .then((data) => console.log(data))
+  //     .catch(err => console.error(err));
+  //   }
 
   render(){
     return(
-      <View style={styles.container}>
+      <View>
         <Text>Hello World</Text>
         {/* <Camera
           ref={(cam) => {
@@ -34,23 +34,23 @@ export default class ScanPage extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  },
-  preview: {
-    flex: 1,
-    justifyContent: 'flex-end',
-    alignItems: 'center',
-    height: Dimensions.get('window').height,
-    width: Dimensions.get('window').width
-  },
-  capture: {
-    flex: 0,
-    backgroundColor: '#fff',
-    borderRadius: 5,
-    color: '#000',
-    padding: 10,
-    margin: 40
-  }
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1
+//   },
+//   preview: {
+//     flex: 1,
+//     justifyContent: 'flex-end',
+//     alignItems: 'center',
+//     height: Dimensions.get('window').height,
+//     width: Dimensions.get('window').width
+//   },
+//   capture: {
+//     flex: 0,
+//     backgroundColor: '#fff',
+//     borderRadius: 5,
+//     color: '#000',
+//     padding: 10,
+//     margin: 40
+//   }
+// });
