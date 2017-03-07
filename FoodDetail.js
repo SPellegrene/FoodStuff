@@ -18,7 +18,7 @@ export default class FoodDetail extends Component {
     title: 'food',
   }
 
-  comonentDidMount(){
+  componentDidMount(){
     this.getData();
   }
 
